@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Danh sách Tour | Coastal Horizons</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f3fcf0",
+                        "primary": "#005d90",
+                        "primary-container": "#0077b6",
+                        "on-surface": "#161d16",
+                        "on-surface-variant": "#404850",
+                        "surface-container-low": "#edf6ea",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#bfc7d1"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-[0px_12px_32px_rgba(22,29,22,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto font-['Plus_Jakarta_Sans'] tracking-tight">
+<a href="index.html" class="text-2xl font-bold text-[#161d16]">Coastal Horizons</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#161d16] opacity-70 hover:opacity-100 hover:text-[#0077B6] transition-all" href="index.html">Trang chủ</a>
+<a class="text-[#0077B6] font-bold border-b-2 border-[#0077B6] pb-1 transition-all" href="tours.html">Tour du lịch</a>
+<a class="text-[#161d16] opacity-70 hover:opacity-100 hover:text-[#0077B6] transition-all" href="inspiration.html">Cảm hứng</a>
+<a class="text-[#161d16] opacity-70 hover:opacity-100 hover:text-[#0077B6] transition-all" href="contact.html">Liên hệ</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer">person</span>
+</div>
+</div>
+</nav>
+
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<div class="mb-12">
+<h1 class="font-headline text-5xl font-extrabold mb-4">Các Tour Du Lịch Tuyển Chọn</h1>
+<p class="text-on-surface-variant text-lg">Tìm kiếm những hành trình nghỉ dưỡng ven biển đẳng cấp nhất.</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Phú Quốc -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-outline-variant/20">
+<div class="aspect-[16/10] overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoXjWUGmDy6waMHVGyoOEBrYQV-lHF-P1JDEnbmttCsiaqfTgfPpOoCs4s0XNYhKdBKrhARtoJEmei0-ba1y8B8HUdjpAXnOqGWmv8G4V64bBiKUPvpWI-FdPXYB2NknMA2CYFox-cRtGN0QzUrAL4kHUer4BfCMHkSE96CjAVc8_HbZDhzOWit1yUo6Iv1uu0uyCo38U3LlK2lLGX1F-chpiuZJUeSOqbkswdmbWhKd7UL6DIx4B3EI5tHqzka5JQheBMP_vjQXU"/>
+</div>
+<div class="p-6">
+<span class="text-primary font-bold text-[10px] uppercase tracking-widest">Việt Nam</span>
+<h3 class="text-2xl font-bold mt-1 mb-4">Đảo Phú Quốc</h3>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm mb-6">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 4 Ngày</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">star</span> 4.9</span>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/10">
+<p class="text-xl font-extrabold text-primary">30.000.000đ</p>
+<a href="phu-quoc-detail.html" class="text-sm font-bold text-secondary hover:underline">Chi tiết</a>
+</div>
+</div>
+</div>
+
+<!-- Maldives -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-outline-variant/20">
+<div class="aspect-[16/10] overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-xLIWwE8mHr92EfeIAJgHx0U1lNjEEYTKIpjVsioRSoSnV9JLQxqyMnnLQg3daNeDdQW6nLCQWFPU35QReY6J6IX2BBuYLDyIFZepgOP1hN4BOrPLXyBFGmpG8B0I0TGCW4t3rVxrhCCMjVEKF2DHCbYimu_E9V8eK7SAa09UEVNOKU03Wr42JKMIqBVPegqFifhZOSeXD0-3CZNpOA7srQ8VgWEzsO8FYrIuIVzJIYbEZ45_i6-6rvQomKzw-HMUwxaWeIbQE3c"/>
+</div>
+<div class="p-6">
+<span class="text-primary font-bold text-[10px] uppercase tracking-widest">Maldives</span>
+<h3 class="text-2xl font-bold mt-1 mb-4">Bắc đảo Malé</h3>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm mb-6">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 6 Ngày</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">star</span> 5.0</span>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/10">
+<p class="text-xl font-extrabold text-primary">70.000.000đ</p>
+<a href="maldives-detail.html" class="text-sm font-bold text-secondary hover:underline">Chi tiết</a>
+</div>
+</div>
+</div>
+
+<!-- Nha Trang -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-outline-variant/20">
+<div class="aspect-[16/10] overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq-5LqADaY4lXGTMOB0BtSwDb_YTFhtVoGlu8sv0PoJdYMvTbJwH7wzpQos1w1JuWlSHpjNB-p9wT5HQGisZo87vKro5E4b9lRektricaGr3fdys9NUBnX9GQLrCFYTpFmDeTPRUxpQ9fnkGlDwIJMoOOxYpVnCsOtiVsdqXifHYiGF1Xh9wKgx0JEXkWsDFs-qVLxzQFclbHE3f1E_wOsZkIyezJNylE9N2Yn-r6JPm262ddm3IhnJoEaQrqI8AwFEV-Ca4B68XQ"/>
+</div>
+<div class="p-6">
+<span class="text-primary font-bold text-[10px] uppercase tracking-widest">Việt Nam</span>
+<h3 class="text-2xl font-bold mt-1 mb-4">Vịnh Nha Trang</h3>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm mb-6">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 3 Ngày</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">star</span> 4.8</span>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/10">
+<p class="text-xl font-extrabold text-primary">23.000.000đ</p>
+<a href="nha-trang-detail.html" class="text-sm font-bold text-secondary hover:underline">Chi tiết</a>
+</div>
+</div>
+</div>
+
+<!-- Bali -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-outline-variant/20">
+<div class="aspect-[16/10] overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80"/>
+</div>
+<div class="p-6">
+<span class="text-primary font-bold text-[10px] uppercase tracking-widest">Indonesia</span>
+<h3 class="text-2xl font-bold mt-1 mb-4">Uluwatu, Bali</h3>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm mb-6">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 5 Ngày</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">star</span> 4.9</span>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/10">
+<p class="text-xl font-extrabold text-primary">35.000.000đ</p>
+<a href="bali-detail.html" class="text-sm font-bold text-secondary hover:underline">Chi tiết</a>
+</div>
+</div>
+</div>
+
+<!-- Santorini -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-outline-variant/20">
+<div class="aspect-[16/10] overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&q=80"/>
+</div>
+<div class="p-6">
+<span class="text-primary font-bold text-[10px] uppercase tracking-widest">Hy Lạp</span>
+<h3 class="text-2xl font-bold mt-1 mb-4">Oia, Santorini</h3>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm mb-6">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 7 Ngày</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">star</span> 5.0</span>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/10">
+<p class="text-xl font-extrabold text-primary">85.000.000đ</p>
+<a href="santorini-detail.html" class="text-sm font-bold text-secondary hover:underline">Chi tiết</a>
+</div>
+</div>
+</div>
+
+<!-- Bora Bora -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-outline-variant/20">
+<div class="aspect-[16/10] overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&q=80"/>
+</div>
+<div class="p-6">
+<span class="text-primary font-bold text-[10px] uppercase tracking-widest">Polynesia</span>
+<h3 class="text-2xl font-bold mt-1 mb-4">Vaitape, Bora Bora</h3>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm mb-6">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 8 Ngày</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">star</span> 4.9</span>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/10">
+<p class="text-xl font-extrabold text-primary">120.000.000đ</p>
+<a href="bora-bora-detail.html" class="text-sm font-bold text-secondary hover:underline">Chi tiết</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<footer class="bg-surface-container-low px-12 py-16 w-full mt-20 border-t border-outline-variant/10">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
+<div class="mb-4 md:mb-0">
+<div class="text-lg font-bold text-[#161d16] mb-2">Coastal Horizons</div>
+<p class="text-[#161d16]/60">Tái định nghĩa trải nghiệm du lịch xa xỉ.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-[#161d16]/60 hover:text-primary" href="#">Instagram</a>
+<a class="text-[#161d16]/60 hover:text-primary" href="#">Pinterest</a>
+</div>
+<div class="text-[#161d16]/60 mt-4 md:mt-0">© 2024 Coastal Horizons.</div>
+</div>
+</footer>
+</body>
+</html>

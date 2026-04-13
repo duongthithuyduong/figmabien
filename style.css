@@ -1,0 +1,14 @@
+.glass-nav {
+    background: rgba(243, 252, 240, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(22, 29, 22, 0.05);
+}
+
+.bg-surface-container-low {
+    background-color: #e9f2e6;
+}
+
+.text-error {
+    color: #ba1a1a;
+}
